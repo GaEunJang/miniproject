@@ -103,7 +103,7 @@ void searchWeight(Product *s,int count){
 void listProduct(Product *s,int count){
     for(int i=0;i<count;i++){
         if(s[i].price==-1 && s[i].method==-1) continue;
-        printf("==============================================\n");
+        printf("===============================================\n");
         printf("%d번\n",i+1);
         readProduct(s[i]);
     }
