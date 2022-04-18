@@ -59,7 +59,7 @@ int main(void){
             else 
                 searchName(slist,curcount);   
         }
-    else if (menu == 6){
+    else if (menu == 7){
             if(count==0)
                 printf("=>데이터 없음!\n");
             else
