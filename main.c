@@ -65,6 +65,12 @@ int main(void){
             else
                 searchExplain(slist,curcount);
         }
+    else if (menu == 7){
+            if(count==0)
+                printf("=>데이터 없음!\n");
+            else
+                searchExplain(slist,curcount);
+        }
     }
     printf("종료됨!\n");
     return 0;
