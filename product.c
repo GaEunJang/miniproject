@@ -62,6 +62,7 @@ int selectMenu(){
     printf("5.파일저장\n");
     printf("6.과일이름 검색\n");
     printf("7.과일설명 검색\n");
+    printf("8.과일중량 검색\n");
     printf("0.종료\n\n");
     printf("=>원하는 메뉴는? ");
     scanf("%d",&menu);
