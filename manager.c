@@ -62,6 +62,25 @@ void searchName(Product *s,int count){
     if(scnt==0) printf("=> 검색 결과 없음\n"); 
 }
 
+void searchExplain(Product *s,int count){
+    int scnt=0;
+    char search[20];
+
+    printf("원하는 설명은? ");
+    getchar();
+    scanf("%[^\n]s",search);
+
+    for(int i=0;i<count;i++){
+        if(s[i].price==-1) continue;
+        if(strstr(s[i].explain,search)){
+            printf("%d번\n",i+1);
+            readProduct(s[i]);
+            scnt++;
+        }
+    }
+    if(scnt==0) printf("=> 검색 결과 없음\n");
+}
+
 void listProduct(Product *s,int count){
     for(int i=0;i<count;i++){
         if(s[i].price==-1 && s[i].method==-1) continue;
