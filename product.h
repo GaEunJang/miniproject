@@ -19,6 +19,6 @@ void saveData(Product *s, int count); //File 저장 함수
 int loadData(Product *s); //File에서 데이터 불러오는 함수
 void searchName(Product *s,int count); //제품을 검색하는 함수
 void listProduct(Product *s,int count); //전체 등록된 제품 리스트를 출력하는 함수
-int deleteProduct(Product *s); //제품을 삭제하는 함수
+int deleteProduct(Product *s); //제품을  삭제하는 함수
 
 #endif

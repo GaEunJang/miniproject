@@ -54,7 +54,8 @@ void searchName(Product *s,int count){
     for(int i=0;i<count;i++){
         if(s[i].price==-1) continue;
         if(strstr(s[i].pdname,search)){
-            printf("%d번\n",i+1);
+            printf("===============================================\n");
+   	    printf("%d번\n",i+1);
             readProduct(s[i]);
             scnt++;
         }
@@ -73,6 +74,7 @@ void searchExplain(Product *s,int count){
     for(int i=0;i<count;i++){
         if(s[i].price==-1) continue;
         if(strstr(s[i].explain,search)){
+            printf("===============================================\n");
             printf("%d번\n",i+1);
             readProduct(s[i]);
             scnt++;
@@ -92,6 +94,7 @@ void searchWeight(Product *s,int count){
     for(int i=0;i<count;i++){
         if(s[i].price==-1) continue;
         if(strstr(s[i].weight,search)){
+            printf("===============================================\n");
             printf("%d번\n",i+1);
             readProduct(s[i]);
             scnt++;
